@@ -1,0 +1,19 @@
+/* public/css/custom.css */
+.cart-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: flyToCart 1s ease-in-out forwards;
+}
+
+@keyframes flyToCart {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(200%, -50%);
+        opacity: 0;
+    }
+}
